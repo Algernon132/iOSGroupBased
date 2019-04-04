@@ -1,1 +1,1 @@
-This is the final project for the iOS Group based class - team 2.
+This is the final project for the iOS group based class - team 2.
