@@ -10,6 +10,7 @@
 		38F8CC6A6E9E91CE8182EE2D /* Pods_firebaseAuthUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7DA4F5160913B5AE1D9036 /* Pods_firebaseAuthUITests.framework */; };
 		8E3EB17BCDFA16C1067F8F89 /* Pods_firebaseAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88965F12A31C3025AF4C0EE9 /* Pods_firebaseAuth.framework */; };
 		92567120225FD4310056CB37 /* loggedinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9256711F225FD4310056CB37 /* loggedinViewController.swift */; };
+		92D54F8B226023E00046BDB6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 92D54F8A226023E00046BDB6 /* GoogleService-Info.plist */; };
 		92E443AE225FB69C004242D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E443AD225FB69C004242D2 /* AppDelegate.swift */; };
 		92E443B0225FB69C004242D2 /* startViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E443AF225FB69C004242D2 /* startViewController.swift */; };
 		92E443B3225FB69C004242D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92E443B1225FB69C004242D2 /* Main.storyboard */; };
@@ -18,7 +19,6 @@
 		92E443BB225FB69E004242D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92E443B9225FB69E004242D2 /* LaunchScreen.storyboard */; };
 		92E443C6225FB69E004242D2 /* firebaseAuthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E443C5225FB69E004242D2 /* firebaseAuthTests.swift */; };
 		92E443D1225FB69E004242D2 /* firebaseAuthUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E443D0225FB69E004242D2 /* firebaseAuthUITests.swift */; };
-		92E443DF225FB96B004242D2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 92E443DE225FB96B004242D2 /* GoogleService-Info.plist */; };
 		92F06A47225FC94E0060FA8C /* signupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F06A46225FC94E0060FA8C /* signupViewController.swift */; };
 		92F06A49225FC9A50060FA8C /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F06A48225FC9A50060FA8C /* loginViewController.swift */; };
 		DEDDEAE496C0B9E0794E9A7C /* Pods_firebaseAuthTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA2447D652FE8C4DB7656A1C /* Pods_firebaseAuthTests.framework */; };
@@ -47,6 +47,7 @@
 		872CB6FAF50A9D5149369867 /* Pods-firebaseAuthUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firebaseAuthUITests.debug.xcconfig"; path = "Target Support Files/Pods-firebaseAuthUITests/Pods-firebaseAuthUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		88965F12A31C3025AF4C0EE9 /* Pods_firebaseAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_firebaseAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9256711F225FD4310056CB37 /* loggedinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loggedinViewController.swift; sourceTree = "<group>"; };
+		92D54F8A226023E00046BDB6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		92E443AA225FB69C004242D2 /* firebaseAuthTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = firebaseAuthTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92E443AD225FB69C004242D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92E443AF225FB69C004242D2 /* startViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = startViewController.swift; sourceTree = "<group>"; };
@@ -61,7 +62,6 @@
 		92E443CC225FB69E004242D2 /* firebaseAuthTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = firebaseAuthTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92E443D0225FB69E004242D2 /* firebaseAuthUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firebaseAuthUITests.swift; sourceTree = "<group>"; };
 		92E443D2225FB69E004242D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		92E443DE225FB96B004242D2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		92F06A46225FC94E0060FA8C /* signupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signupViewController.swift; sourceTree = "<group>"; };
 		92F06A48225FC9A50060FA8C /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 		B3487F3447235E88114D77B0 /* Pods-firebaseAuthUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firebaseAuthUITests.release.xcconfig"; path = "Target Support Files/Pods-firebaseAuthUITests/Pods-firebaseAuthUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -137,7 +137,7 @@
 		92E443AC225FB69C004242D2 /* firebaseAuthTest */ = {
 			isa = PBXGroup;
 			children = (
-				92E443DE225FB96B004242D2 /* GoogleService-Info.plist */,
+				92D54F8A226023E00046BDB6 /* GoogleService-Info.plist */,
 				92E443AD225FB69C004242D2 /* AppDelegate.swift */,
 				92E443AF225FB69C004242D2 /* startViewController.swift */,
 				92E443B1225FB69C004242D2 /* Main.storyboard */,
@@ -289,7 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				92E443BB225FB69E004242D2 /* LaunchScreen.storyboard in Resources */,
-				92E443DF225FB96B004242D2 /* GoogleService-Info.plist in Resources */,
+				92D54F8B226023E00046BDB6 /* GoogleService-Info.plist in Resources */,
 				92E443B8225FB69E004242D2 /* Assets.xcassets in Resources */,
 				92E443B3225FB69C004242D2 /* Main.storyboard in Resources */,
 			);
