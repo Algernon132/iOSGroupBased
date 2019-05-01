@@ -1,5 +1,5 @@
 <?php
-function getArgs(){
+function getArgs($mysqli){
     
 }
 

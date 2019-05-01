@@ -1,5 +1,5 @@
 <?php
-function deleteUser(){
+function deleteUser($mysqli){
     //verify username and password
     
     //get all uploads with the UserID matching

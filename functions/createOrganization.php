@@ -1,5 +1,5 @@
 <?php
-function createOrganization(){
+function createOrganization($mysqli){
     
     //Verify userID and password
     

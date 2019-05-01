@@ -1,5 +1,5 @@
 <?php
-function uploadMedia(){
+function uploadMedia($mysqli){
     
 }
 

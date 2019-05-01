@@ -1,5 +1,5 @@
 <?php
-function createProject(){
+function createProject($mysqli){
     
     //verify the userID matches the password
     

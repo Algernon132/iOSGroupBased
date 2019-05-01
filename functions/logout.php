@@ -1,5 +1,5 @@
 <?php
-function logout(){
+function logout($mysqli){
     
 }
 

@@ -1,5 +1,5 @@
 <?php
-function uploadSubmission(){
+function uploadSubmission($mysqli){
     
 }
 

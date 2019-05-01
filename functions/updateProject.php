@@ -1,5 +1,5 @@
 <?php
-function updateProject(){
+function updateProject($mysqli){
     
 }
 

@@ -1,5 +1,5 @@
 <?php
-function login(){
+function login($mysqli){
     
 }
 

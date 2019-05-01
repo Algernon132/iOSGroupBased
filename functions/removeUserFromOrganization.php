@@ -1,5 +1,5 @@
 <?php
-function removeUserFromOrganization(){
+function removeUserFromOrganization($mysqli){
     
 }
 

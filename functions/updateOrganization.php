@@ -1,5 +1,5 @@
 <?php
-function updateOrganization(){
+function updateOrganization($mysqli){
     
 }
 

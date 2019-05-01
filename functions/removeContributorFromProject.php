@@ -1,5 +1,5 @@
 <?php
-function removeContributorFromProject(){
+function removeContributorFromProject($mysqli){
     
 }
 

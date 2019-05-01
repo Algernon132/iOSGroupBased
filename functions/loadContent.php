@@ -1,5 +1,5 @@
 <?php
-function loadContent(){
+function loadContent($mysqli){
     
 }
 
