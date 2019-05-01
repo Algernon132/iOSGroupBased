@@ -8,3 +8,4 @@ PHP:
 
 SQL:
 1. Set trigger so an organization with no editor is deleted
+2. Drop current db and re-implement with updated script
