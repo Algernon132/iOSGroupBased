@@ -1,5 +1,5 @@
 <?php
-function changePassword($mysqli){
+function verifyCredentials($mysqli){
     //verify username and password match
     //change password
     
