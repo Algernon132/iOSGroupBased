@@ -5,8 +5,9 @@ function createUser($mysqli){
     $password = $_POST["password"];
     $userStatus = 0;    //DEFAULT VALUE. CHANGE WHEN APPROPRIATE
     
+    $argArray = array($name,$password,$userStatus);
     //Create user tuple
-    $query = 'INSERT INTO Users(Name,Password,UserStatus) VALUES ("' .$name . '","' . $password . '",' . $userStatus . ")";
+    $query = 'INSERT INTO Users(Name,Password,UserStatus)' . createArgs($argArray); //Automatically generates string for SQL args. Huge pain otherwise
     console_log($query);
     $queryResult = $mysqli->query($query);
     if($queryResult == true){
