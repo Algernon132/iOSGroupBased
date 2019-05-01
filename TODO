@@ -1,0 +1,10 @@
+PHP:
+1.Write the actual functions
+2.Verify JSON responses are valid and useable
+3.Work out an efficient user verification system
+    a.Currently just checks username and hashed password for every transaction. Not sure if this is the best route
+
+
+
+SQL:
+1. Set trigger so an organization with no editor is deleted
