@@ -4,6 +4,7 @@
 ini_set('display_errors',1); error_reporting(E_ALL);
 
 require "dbConfig.php";
+require "returnJSON.php";
 //Get each file from the functions directory
 foreach (glob("functions/*.php") as $filename)
 {

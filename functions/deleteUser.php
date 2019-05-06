@@ -1,7 +1,7 @@
 <?php
 function deleteUser($mysqli){
     //verify username and password
-
+    verifyCredentials($mysqli);
     
     
     //get all organizations that have only this user listed as an editor

@@ -68,9 +68,11 @@
               updateOrganization($mysqli);
               break;
           default:
-              echo("Something went wrong.");
-              break;
+              die(json_encode(false));
       }
+    }else{
+        //die(json_encode($_POST));
+        echo('');
     }
 ?>
 

@@ -1,6 +1,0 @@
-<?php
-function getArgs($mysqli){
-    
-}
-
-?>

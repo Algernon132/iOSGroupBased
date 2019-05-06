@@ -1,5 +1,15 @@
 <?php
 function createProject($mysqli){
+    $username = $_POST["username"];
+    $hashedPassword = $_POST["hashedPassword"];
+    $projectName = $_POST["projectName"];
+    $projectDescription = $_POST["projectDescription"];
+    
+    if(isset($_POST["organizationID"])){
+        $organizationID = $_POST["organizationID"];
+    }else{
+        $organizationID = NULL;
+    }
     
     //verify the userID matches the password
     

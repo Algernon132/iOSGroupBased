@@ -3,5 +3,5 @@
 $dbhost = "localhost";
 $dbuser = "ios";
 $dbpass = "iospassword";
-$dbname = "mydb";
+$dbname = "iosProd";
 ?>
