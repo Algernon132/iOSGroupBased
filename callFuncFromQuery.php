@@ -67,6 +67,9 @@
           case 'updateOrganization':
               updateOrganization($mysqli);
               break;
+          case 'addEditorNote':
+              addEditorNote($mysqli);
+              break;
           default:
               die(json_encode(false));
       }
