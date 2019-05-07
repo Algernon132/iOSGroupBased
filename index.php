@@ -7,17 +7,13 @@ $_POST["hashedPassword"] = "changedPass";
 $_POST["newPassword"] = "changedPass2";
 $_POST["action"] = "changePassword";
 
-//sanitize user inputs to avoid mysql injection
-foreach( $_POST as $stuff ) {
-    if( is_array( $stuff ) ) {
-        foreach( $stuff as $thing ) {
-            $thing = $mysqli->real_escape_string($thing);
-        }
-    } else {
-        $stuff = $mysqli->real_escape_string($stuff);
-    }
-}
+
 
 //echo json_encode($_POST);
-include("callFuncFromQuery.php");
+//include("callFuncFromQuery.php");
+
+$tableName = "testTable";
+$returnValueArray = array("*");
+$whereArray = array("Name"=>"Chaz","ID"=>1);
+die(createSelectStatement($tableName,$returnValueArray,$whereArray));
 ?>
