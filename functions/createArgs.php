@@ -16,8 +16,10 @@ function createArgs($arguments){
             $queryString .= '"';                             //start quote if string
             $queryString .= $value;                          //insert string
             $queryString .= '"';                             //close quote if string
-        }else{
-            $queryString .= $value;                          //insert value if not string (probably int)
+        }else if(getType($value)=="integer"){
+            $queryString .= $value;                          //special case. Add 'null' w/o quotes     
+        }else if($value == null){
+            $queryString .= "null";                         //insert value if not string (probably int)
         }
         
         $queryString .= ",";

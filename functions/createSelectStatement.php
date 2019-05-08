@@ -10,39 +10,40 @@ function createSelectStatement($tableName,$returnValueArray,$whereArray){
     //null if no WHERE clause
     
     $statement = "SELECT ";
-    if(count($returnValueArray)>1){ //if there is more than one return value
+    if(count($returnValueArray)>1){                     //if there is more than one return value
         foreach($returnValueArray as $returnValue){
             $statement .= $returnValue;
             $statement .= ",";
         }
-        $statement = rtrim($statement,',');                  //remove trailing comma
+        $statement = rtrim($statement,',');             //remove trailing comma
     }else{
         $statement .= $returnValueArray[0];
     }
     $statement .= " FROM ";
     $statement .= $tableName;
-    if($whereArray != null){
+    if($whereArray != null){                            //skip all of this if there are no WHEREs
         $statement .= " WHERE ";
         foreach($whereArray as $key=>$value){
             $statement .= $key;
             $statement .= " = ";
-            if(gettype($value) == "string"){    //have to enclose strings in quotes
+            if(gettype($value) == "string"){            //have to enclose strings in quotes
                 $statement .= "\"";
                 $statement .= $value;
                 $statement .= "\"";
+            }else if($value == null){                   //special case. Don't enclose null values in quotes
+                $statement .= "null";
             }else{
-                $statement .= $value;       //presumably an int
+                $statement .= $value;                   //presumably an int
             }
             $statement .= " AND "; 
         }//end foreach
-        $statement = rtrim($statement,' AND '); //remove trailing 'AND'
+        $statement = rtrim($statement,' AND ');         //remove trailing 'AND'
     }
     
-    $statement .= ";";
+    $statement .= ";";                                  //final semicolon
 
+    return($statement);
 
 }//end function
-
-    //SELECT * FROM Organization WHERE OrganizationName = "$organizationName" AND OrganizationPassword = "$organizationPassword"
 ?>
 

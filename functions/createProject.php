@@ -11,17 +11,17 @@ function createProject($mysqli){
     if(isset($_POST["organizationID"])){    //orgID is optional
         $organizationID = $_POST["organizationID"];
     }else{
-        $organizationID = NULL;
+        $organizationID = null;
     }
-    //verify the userID matches the password
-    verifyCredentials($mysqli);
+
     
     $argArray = array($projectName, $projectDescription, $organizationID, $userID);
     
     //Set LeaderID to userID that created the project
     //Set project name and description
     //If an organization ID is provided, set it. Otherwise set it to NULL
-    $query = "INSERT INTO Project (ProjectName, ProjectDescription, OrganizationID, LeaderID)" . createArgs($argArray);
+    $query = "INSERT INTO Projects(ProjectName, ProjectDescription, OrganizationID, LeaderID)" . createArgs($argArray);
+    console_log($query);
     
     performInsert($mysqli,$query,$returnObject);
     

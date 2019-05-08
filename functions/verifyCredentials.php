@@ -4,11 +4,9 @@ function verifyCredentials($mysqli){
     $username = $_POST["username"];
     $argArray = array($hashedPassword,$username);
     
-    //CHANGE "name" TO "username" on production
-    $query = "SELECT ID FROM Users WHERE name = " . "'" . $username . "'" . " AND password = " . "'" . $hashedPassword . "';";
+    $query = "SELECT ID FROM Users WHERE Username = " . "'" . $username . "'" . " AND HashedPassword = " . "'" . $hashedPassword . "';";
     console_log($query);
     $queryResult = $mysqli->query($query);
-    console_log(json_encode($queryResult));
     
     //Close connection and print JSON if no results are found for the given username and password
     if($queryResult->num_rows != null && $queryResult->num_rows != 0){

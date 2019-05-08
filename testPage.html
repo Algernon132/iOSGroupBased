@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Test Page</title>
+    </head>
+    <body>
+    
+        <form action="index.php" method="post">
+            username:<br>
+            <input type="text" name="username"><br>
+            password:<br>
+            <input type="text" name="hashedPassword"><br>
+            newPassword:<br>
+            <input type="text" name="newPassword"><br>
+            action:<br>
+            <input type="text" name="action"><br>
+            userID:<br>
+            <input type="number" step="1" name="userID"><br>
+            fullName:<br>
+            <input type="text" name="fullName"><br>
+            userStatus:<br>
+            <input type="number" step="1" name="userStatus"><br>
+            projectName:<br>
+            <input type="text" name="projectName"><br>
+            projectDescription:<br>
+            <input type="text" name="projectDescription"><br>
+            organizationName:<br>
+            <input type="text" name="organizationName"><br>
+            organizationPassword:<br>
+            <input type="text" name="organizationPassword"><br>
+            organizationDescription:<br>
+            <input type="text" name="organizationDescription"><br>            
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+
+<!--
+$_POST["username"] = "testFromWeb7";
+$_POST["hashedPassword"] = hashPassword("changedPass6");
+$_POST["newPassword"] = "changedPass2";
+$_POST["action"] = "changePassword";
+$_POST["userID"] = 3;
+$_POST["fullName"] = "Testy McTesterson3";
+$_POST["userStatus"] = 0;
+$_POST["projectName"] = "testProject";
+$_POST["projectDescription"] = "Just a test project";
+$_POST["organizationName"] = "testOrg3";
+$_POST["organizationPassword"] = "testPassword";
+$_POST["organizationDescription"] = "Just a test organization";
+
+
+-->
+</html>
