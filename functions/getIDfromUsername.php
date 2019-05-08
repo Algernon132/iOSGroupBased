@@ -4,6 +4,7 @@ function getIDFromUsername($mysqli){
     $queryResult= $mysqli->query($query);
     $ID = getJSONFromSQL($queryResult);
     return($ID);
+    
 }
 
 ?>

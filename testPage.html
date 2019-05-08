@@ -14,11 +14,11 @@
             action:<br>
             <input type="text" name="action"><br>
             userID:<br>
-            <input type="number" step="1" name="userID"><br>
+            <input type="number" name="userID"><br>
             fullName:<br>
             <input type="text" name="fullName"><br>
             userStatus:<br>
-            <input type="number" step="1" name="userStatus"><br>
+            <input type="number" name="userStatus"><br>
             projectName:<br>
             <input type="text" name="projectName"><br>
             projectDescription:<br>
@@ -27,8 +27,12 @@
             <input type="text" name="organizationName"><br>
             organizationPassword:<br>
             <input type="text" name="organizationPassword"><br>
-            organizationDescription:<br>
-            <input type="text" name="organizationDescription"><br>            
+            submissionTitle:<br>
+            <input type="text" name="submissionTitle"><br>  
+            submissionProjectID:<br>
+            <input type="number" name="submissionProjectID"><br>
+            uploadContent:<br>
+            <input type="text" name="uploadContent"><br>
             <input type="submit" value="Submit">
         </form>
     </body>
@@ -47,6 +51,11 @@ $_POST["organizationName"] = "testOrg3";
 $_POST["organizationPassword"] = "testPassword";
 $_POST["organizationDescription"] = "Just a test organization";
 
+
+$title = $_POST["submissionTitle"];
+    $projectID = $_POST["submissionProjectID"];
+    $uploaderID = $_POST["userID"];
+    $uploadContent = $_POST["uploadContent"];
 
 -->
 </html>

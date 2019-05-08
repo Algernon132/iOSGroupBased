@@ -46,8 +46,8 @@
           case 'removeContributorFromProject':
               removeContributorFromProject($mysqli);
               break;
-          case 'uploadTextEntry':
-              uploadTextEntry($mysqli);
+          case 'uploadSubmission':
+              uploadSubmission($mysqli);
               break;
           case 'deleteTextEntry':
               deleteTextEntry($mysqli);
@@ -71,7 +71,9 @@
               addEditorNote($mysqli);
               break;
           default:
-              die(json_encode(false));
+              $returnObject = new returnJSON();
+              $returnObject->successCode = 6;
+              die(json_encode($returnObject));
       }
     }else{
         //die(json_encode($_POST));
