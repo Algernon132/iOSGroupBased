@@ -4,12 +4,6 @@
     if($_POST != null){
     $queryType = $_POST["action"];
       switch($queryType){
-          case 'login':
-              login($mysqli);
-              break;
-          case 'logout':
-              logout($mysqli);
-              break;
           case 'loadContent':
               loadContent($mysqli);
               break;
@@ -69,6 +63,9 @@
               break;
           case 'addEditorNote':
               addEditorNote($mysqli);
+              break;
+          case 'deleteEditorNote':
+              deleteEditorNote($mysqli);
               break;
           default:
               $returnObject = new returnJSON();

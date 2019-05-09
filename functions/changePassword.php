@@ -1,7 +1,5 @@
 <?php
 function changePassword($mysqli){
-    //verify username and password match
-    verifyCredentials($mysqli);
     $newPassword = $_POST["newPassword"];
     $username = $_POST["username"];
     $returnObject = new returnJSON;        //Create an empty object without warnings

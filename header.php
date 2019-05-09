@@ -20,6 +20,9 @@ $mysqli = new mysqli($dbhost,$dbuser,$dbpass,$dbname);  //from db.conf
         }
 console_log("Connected successfully");
 
+if($_POST["username"]!= null){
+    $_POST["userID"] = getIDFromUsername($mysqli);
+}
 //sanitize all user inputs to avoid mysql injection
 foreach( $_POST as $key=>$stuff ) {
     if( is_array( $stuff ) ) {
