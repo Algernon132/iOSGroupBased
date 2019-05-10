@@ -32,7 +32,7 @@ CREATE TABLE IF NOT EXISTS `iosProd`.`Users` (
   `ImageLocation` VARCHAR(500) NULL,
   `FullName` VARCHAR(100) NOT NULL,
   PRIMARY KEY (`ID`, `Username`),
-  UNIQUE INDEX `Username_UNIQUE` (`Username` ASC) VISIBLE)
+  UNIQUE INDEX `Username_UNIQUE` (`Username` ASC))
 ENGINE = InnoDB;
 
 
@@ -47,7 +47,7 @@ CREATE TABLE IF NOT EXISTS `iosProd`.`Organizations` (
   `OrganizationPassword` CHAR(64) NOT NULL,
   `OrganizationDescription` VARCHAR(240) NULL,
   PRIMARY KEY (`OrganizationID`),
-  UNIQUE INDEX `OrganizationName_UNIQUE` (`OrganizationName` ASC) VISIBLE)
+  UNIQUE INDEX `OrganizationName_UNIQUE` (`OrganizationName` ASC))
 ENGINE = InnoDB;
 
 
@@ -64,9 +64,9 @@ CREATE TABLE IF NOT EXISTS `iosProd`.`Projects` (
   `DateStarted` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `LeaderID` INT NOT NULL,
   PRIMARY KEY (`ProjectID`),
-  INDEX `fk_Projects_Organization1_idx` (`OrganizationID` ASC) VISIBLE,
-  INDEX `fk_Projects_Users1_idx` (`LeaderID` ASC) VISIBLE,
-  UNIQUE INDEX `DateStarted_UNIQUE` (`DateStarted` ASC) VISIBLE,
+  INDEX `fk_Projects_Organization1_idx` (`OrganizationID` ASC),
+  INDEX `fk_Projects_Users1_idx` (`LeaderID` ASC),
+  UNIQUE INDEX `DateStarted_UNIQUE` (`DateStarted` ASC),
   CONSTRAINT `fk_Projects_Organization1`
     FOREIGN KEY (`OrganizationID`)
     REFERENCES `iosProd`.`Organizations` (`OrganizationID`)
@@ -93,8 +93,8 @@ CREATE TABLE IF NOT EXISTS `iosProd`.`Uploads` (
   `UploaderID` INT NOT NULL,
   `UploadContent` TEXT NULL,
   PRIMARY KEY (`UploadID`),
-  INDEX `fk_Uploads_Projects1_idx` (`ProjectID` ASC) VISIBLE,
-  INDEX `fk_Uploads_Users1_idx` (`UploaderID` ASC) VISIBLE,
+  INDEX `fk_Uploads_Projects1_idx` (`ProjectID` ASC),
+  INDEX `fk_Uploads_Users1_idx` (`UploaderID` ASC),
   CONSTRAINT `fk_Uploads_Projects1`
     FOREIGN KEY (`ProjectID`)
     REFERENCES `iosProd`.`Projects` (`ProjectID`)
@@ -119,7 +119,7 @@ CREATE TABLE IF NOT EXISTS `iosProd`.`MediaUploads` (
   `MediaLocation` VARCHAR(500) NULL,
   `MediaID` INT NOT NULL,
   PRIMARY KEY (`UploadID`, `MediaID`),
-  INDEX `fk_MediaUploads_Uploads_idx` (`UploadID` ASC) VISIBLE,
+  INDEX `fk_MediaUploads_Uploads_idx` (`UploadID` ASC),
   CONSTRAINT `fk_MediaUploads_Uploads`
     FOREIGN KEY (`UploadID`)
     REFERENCES `iosProd`.`Uploads` (`UploadID`)
@@ -138,8 +138,8 @@ CREATE TABLE IF NOT EXISTS `iosProd`.`Shares` (
   `UserID` INT NOT NULL,
   `IsContributor` TINYINT NOT NULL,
   PRIMARY KEY (`ProjectID`, `UserID`),
-  INDEX `fk_Shares_Projects1_idx` (`ProjectID` ASC) VISIBLE,
-  INDEX `fk_Shares_Users1_idx` (`UserID` ASC) VISIBLE,
+  INDEX `fk_Shares_Projects1_idx` (`ProjectID` ASC),
+  INDEX `fk_Shares_Users1_idx` (`UserID` ASC),
   CONSTRAINT `fk_Shares_Projects1`
     FOREIGN KEY (`ProjectID`)
     REFERENCES `iosProd`.`Projects` (`ProjectID`)
@@ -162,7 +162,7 @@ CREATE TABLE IF NOT EXISTS `iosProd`.`Editors` (
   `UserID` INT NOT NULL,
   `OrganizationID` INT NOT NULL,
   PRIMARY KEY (`UserID`),
-  INDEX `fk_Editors_Organization1_idx` (`OrganizationID` ASC) VISIBLE,
+  INDEX `fk_Editors_Organization1_idx` (`OrganizationID` ASC),
   CONSTRAINT `fk_Editors_Users1`
     FOREIGN KEY (`UserID`)
     REFERENCES `iosProd`.`Users` (`ID`)
@@ -187,8 +187,8 @@ CREATE TABLE IF NOT EXISTS `iosProd`.`EditorNotes` (
   `NoteContent` VARCHAR(5000) NULL,
   `EditorID` INT NOT NULL,
   PRIMARY KEY (`UploadID`, `NoteID`),
-  INDEX `fk_EditorNotes_Editors1_idx` (`EditorID` ASC) VISIBLE,
-  INDEX `fk_EditorNotes_Uploads1_idx` (`UploadID` ASC) VISIBLE,
+  INDEX `fk_EditorNotes_Editors1_idx` (`EditorID` ASC),
+  INDEX `fk_EditorNotes_Uploads1_idx` (`UploadID` ASC),
   CONSTRAINT `fk_EditorNotes_Editors1`
     FOREIGN KEY (`EditorID`)
     REFERENCES `iosProd`.`Editors` (`UserID`)
