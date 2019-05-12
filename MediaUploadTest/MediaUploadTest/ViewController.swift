@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Cloudinary
 
 public protocol ImagePickerDelegate: class {
     func didSelect(image: UIImage?)
@@ -14,6 +15,7 @@ public protocol ImagePickerDelegate: class {
 
 open class ImagePicker: NSObject {
     
+    let cloudinary = CLDCloudinary(configuration: CLDConfiguration(cloudName: "dnceabf52", apiSecret: "oe9TSfe2e-_tKV7wE7tMRkxCNkM", secure: true))
     private let pickerController: UIImagePickerController
     private weak var presentationController: UIViewController?
     private weak var delegate: ImagePickerDelegate?
@@ -68,6 +70,9 @@ open class ImagePicker: NSObject {
         controller.dismiss(animated: true, completion: nil)
         
         self.delegate?.didSelect(image: image)
+        guard let dataImage=image?.jpegData(compressionQuality: 1) else {return}
+        let params = CLDUploadRequestParams().setUploadPreset("normalupload")
+        let request = cloudinary.createUploader().upload(data: dataImage, uploadPreset: "normalupload")
     }
 }
 
