@@ -14,7 +14,8 @@ function addUserToOrganization($mysqli){
     $query = createSelectStatement($tableName,$returnValueArray,$whereArray);
     //SELECT * FROM Organization WHERE OrganizationName = "$organizationName" AND OrganizationPassword = "$organizationPassword"
     
-    $queryResult = $mysqli->query($query);
+    //$queryResult = $mysqli->query($query);
+    //replaced by performInsert
     
     performInsert($mysqli,$query,$returnObject);
     

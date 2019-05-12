@@ -3,11 +3,11 @@
 class returnJSON{
     var $successCode;        //Status of success/failure
     var $isReturnedJSON;    //boolean. True if any JSON was returned, like when accessing submissions
-    var $returnJSON;        //Actual JSON content to be returned. Stored as a JSON encoded String
+    var $returnedJSON;        //Actual JSON content to be returned. Stored as a JSON encoded String
     function __construct() {
         $this->successCode = 3;
         $this->isReturnedJSON = false;
-        $this->returnJSON = null;
+        $this->returnJSON = '';
     }
 }
 

@@ -19,27 +19,12 @@ $mysqli = new mysqli($dbhost,$dbuser,$dbpass,$dbname);  //from db.conf
         }
 console_log("Connected successfully");
 
-if($_POST["username"]!= null){
-    $_POST["userID"] = getIDFromUsername($mysqli);
-}
 //sanitize all user inputs to avoid mysql injection
 foreach( $_POST as $key=>$stuff ) {
-    if( is_array( $stuff ) ) {
-        foreach( $stuff as $thing ) {
-            $thing = $mysqli->real_escape_string($thing);
-            if(is_numeric($thing)){
-                $thing = (int)$thing;   //html forms only send strings, this will change strings containing numbers into ints so we can actually use them
-            }
-            $_POST[$key] = $thing;
-        }
-    } else {
-        $stuff = $mysqli->real_escape_string($stuff);
-        if(is_numeric($stuff)){
-           $stuff = (int)$stuff;         
-        }
-        $_POST[$key] = $stuff;
-        console_log($stuff);
+    $stuff = $mysqli->real_escape_string($stuff);
+    if(is_numeric($stuff)){
+        $stuff = (int)$stuff;         
     }
-    
+    $_POST[$key] = $stuff;
 }
 ?>

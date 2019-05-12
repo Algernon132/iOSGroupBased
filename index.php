@@ -8,8 +8,6 @@ if(!isset($_POST["action"])){
 
 include"header.php";        //Connects to mysql, enables error reporting, imports function files
 
-console_log(json_encode($_POST));
-
 //verify the userID matches the password
 if($_POST["action"]!="createUser"){
     verifyCredentials($mysqli);
