@@ -70,8 +70,9 @@ open class ImagePicker: NSObject {
         controller.dismiss(animated: true, completion: nil)
         
         self.delegate?.didSelect(image: image)
+        //BELOW ARE THE MOST BASIC STEPS FOR IMAGE UPLOAD. WE FIRST CONVERT THE IMAGE INTO RAW DATA
         guard let dataImage=image?.jpegData(compressionQuality: 1) else {return}
-        let params = CLDUploadRequestParams().setUploadPreset("normalupload")
+        //NEXT, WE CREATE AN UPLOAD OBJECT AND UPLOAD THE IMAGE
         let request = cloudinary.createUploader().upload(data: dataImage, uploadPreset: "normalupload")
     }
 }
