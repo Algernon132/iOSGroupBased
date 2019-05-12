@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MediaUploadTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DpG-UK-dAM">
+                                <rect key="frame" x="135" y="304" width="144" height="30"/>
+                                <state key="normal" title="Pick Image to upload"/>
+                                <connections>
+                                    <action selector="showImagePicker:" destination="BYZ-38-t0r" eventType="touchUpInside" id="63i-aK-GOQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3I6-YR-0WL">
+                                <rect key="frame" x="127" y="364" width="160" height="30"/>
+                                <state key="normal" title="Get Downloaded Image"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fa0-WZ-Wuo">
+                                <rect key="frame" x="0.0" y="20" width="414" height="254"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fa0-WZ-Wuo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="04a-UF-x8X"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fa0-WZ-Wuo" secondAttribute="bottom" constant="462" id="2ZP-28-a0s"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fa0-WZ-Wuo" secondAttribute="trailing" id="IVm-mc-xMC"/>
+                            <constraint firstItem="3I6-YR-0WL" firstAttribute="top" secondItem="DpG-UK-dAM" secondAttribute="bottom" constant="30" id="JY8-lH-l1u"/>
+                            <constraint firstItem="DpG-UK-dAM" firstAttribute="top" secondItem="fa0-WZ-Wuo" secondAttribute="bottom" constant="30" id="NgE-6A-RSo"/>
+                            <constraint firstItem="fa0-WZ-Wuo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Qfs-NI-wMK"/>
+                            <constraint firstItem="3I6-YR-0WL" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="w2G-Gs-W7A"/>
+                            <constraint firstItem="DpG-UK-dAM" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="xcV-IV-hXq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="fa0-WZ-Wuo" id="Thk-s4-YcO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47.826086956521742" y="24.456521739130437"/>
+        </scene>
+    </scenes>
+</document>
