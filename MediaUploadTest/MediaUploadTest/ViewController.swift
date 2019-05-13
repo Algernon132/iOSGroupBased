@@ -74,6 +74,10 @@ open class ImagePicker: NSObject {
         guard let dataImage=image?.jpegData(compressionQuality: 1) else {return}
         //NEXT, WE CREATE AN UPLOAD OBJECT AND UPLOAD THE IMAGE
         let request = cloudinary.createUploader().upload(data: dataImage, uploadPreset: "normalupload")
+        request.response { (result, error) in
+            //THE BELOW URL IS A DIRECT, UNIQUE LINK TO THE UPLOADED MEDIA FILE
+            print(result?.url)
+        }
     }
 }
 
