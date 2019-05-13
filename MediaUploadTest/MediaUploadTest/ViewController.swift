@@ -16,6 +16,7 @@ public protocol ImagePickerDelegate: class {
 open class ImagePicker: NSObject {
     
     let cloudinary = CLDCloudinary(configuration: CLDConfiguration(cloudName: "dnceabf52", apiSecret: "oe9TSfe2e-_tKV7wE7tMRkxCNkM", secure: true))
+    
     private let pickerController: UIImagePickerController
     private weak var presentationController: UIViewController?
     private weak var delegate: ImagePickerDelegate?
@@ -104,12 +105,23 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
     
+    let cloudinary = CLDCloudinary(configuration: CLDConfiguration(cloudName: "dnceabf52", apiSecret: "oe9TSfe2e-_tKV7wE7tMRkxCNkM", secure: true))
+    
     var imagePicker: ImagePicker!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.imagePicker = ImagePicker(presentationController: self, delegate: self as ImagePickerDelegate)
+    }
+    @IBAction func downloadImageAction(_ sender: Any) {
+        //THIS IS THE FUNCTION FOR DOWNLOADING AN IMAGE. URL WILL BE REPLACED WITH WHATEVER URLs ARE STORED IN THE DATABASE
+        let URL="https://res.cloudinary.com/dnceabf52/image/upload/v1557712070/iOSProject/Screen_Shot_2019-05-09_at_1.52.40_PM_q6padk.png"
+        let downloader = cloudinary.createDownloader().fetchImage(URL) { (image, error) in
+            self.imageView.image=image
+            // image is an instance UIImage
+            // error is an instance of NSError
+        }
     }
     @IBAction func showImagePicker(_ sender: Any) {
         self.imagePicker.present(from: sender as! UIView)
