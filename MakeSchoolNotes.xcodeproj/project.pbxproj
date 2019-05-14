@@ -1,0 +1,481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E4A07941C42F3B0007F415F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4A07931C42F3B0007F415F /* AppDelegate.swift */; };
+		2E4A07991C42F3B0007F415F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E4A07971C42F3B0007F415F /* Main.storyboard */; };
+		2E4A079B1C42F3B0007F415F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E4A079A1C42F3B0007F415F /* Assets.xcassets */; };
+		2E4A079E1C42F3B0007F415F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E4A079C1C42F3B0007F415F /* LaunchScreen.storyboard */; };
+		2E4A07A91C42F40B007F415F /* ListNotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4A07A81C42F40B007F415F /* ListNotesTableViewController.swift */; };
+		2E4A07AB1C42F497007F415F /* DisplayNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4A07AA1C42F497007F415F /* DisplayNoteViewController.swift */; };
+		2E4A07AF1C42F539007F415F /* Date+convertToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4A07AE1C42F539007F415F /* Date+convertToString.swift */; };
+		2E4A07B11C42F599007F415F /* ListNotesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4A07B01C42F599007F415F /* ListNotesTableViewCell.swift */; };
+		95FBA482227CCDF800894BE8 /* kT8ngMbnc.png in Resources */ = {isa = PBXBuildFile; fileRef = 95FBA481227CCDF800894BE8 /* kT8ngMbnc.png */; };
+		95FBA484227CCE1500894BE8 /* 69-696767_free-folder-pink-pink-folder-cartoon-clipart.png in Resources */ = {isa = PBXBuildFile; fileRef = 95FBA483227CCE1500894BE8 /* 69-696767_free-folder-pink-pink-folder-cartoon-clipart.png */; };
+		95FBA486227CCE1D00894BE8 /* transparent-microphone-cartoon-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 95FBA485227CCE1D00894BE8 /* transparent-microphone-cartoon-3.png */; };
+		95FBA488227CD00900894BE8 /* 12588374231021674709snifty_Spiral_notebook.svg.hi.png in Resources */ = {isa = PBXBuildFile; fileRef = 95FBA487227CD00900894BE8 /* 12588374231021674709snifty_Spiral_notebook.svg.hi.png */; };
+		95FBA48A227CD18800894BE8 /* ListActualNotesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FBA489227CD18800894BE8 /* ListActualNotesController.swift */; };
+		95FBA48C227CD32A00894BE8 /* ListPhotosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FBA48B227CD32A00894BE8 /* ListPhotosController.swift */; };
+		95FBA48E227CD40700894BE8 /* ListDicatationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FBA48D227CD40700894BE8 /* ListDicatationsController.swift */; };
+		95FBA49022874D2B00894BE8 /* ListDictationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FBA48F22874D2B00894BE8 /* ListDictationsTableViewCell.swift */; };
+		95FBA4922287506000894BE8 /* DisplayDictationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FBA4912287506000894BE8 /* DisplayDictationViewController.swift */; };
+		95FBA494228757F300894BE8 /* dictations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FBA493228757F300894BE8 /* dictations.swift */; };
+		95FBA4962287B55B00894BE8 /* ListActualNotesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FBA4952287B55B00894BE8 /* ListActualNotesTableViewCell.swift */; };
+		95FBA4982287BD5100894BE8 /* DisplayActualNoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FBA4972287BD5100894BE8 /* DisplayActualNoteController.swift */; };
+		95FBA49A2287C20B00894BE8 /* notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FBA4992287C20B00894BE8 /* notes.swift */; };
+		95FBA49C2287CDA000894BE8 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FBA49B2287CDA000894BE8 /* CoreDataHelper.swift */; };
+		95FBA49F228892AD00894BE8 /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 95FBA49D228892AD00894BE8 /* CoreData.xcdatamodeld */; };
+		95FBA4A1228892E400894BE8 /* Projects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FBA4A0228892E400894BE8 /* Projects.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2E4A07BB1C42F8B5007F415F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2E4A07901C42F3B0007F415F /* MakeSchoolNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MakeSchoolNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E4A07931C42F3B0007F415F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2E4A07981C42F3B0007F415F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2E4A079A1C42F3B0007F415F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2E4A079D1C42F3B0007F415F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2E4A079F1C42F3B0007F415F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E4A07A81C42F40B007F415F /* ListNotesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListNotesTableViewController.swift; sourceTree = "<group>"; };
+		2E4A07AA1C42F497007F415F /* DisplayNoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayNoteViewController.swift; sourceTree = "<group>"; };
+		2E4A07AE1C42F539007F415F /* Date+convertToString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+convertToString.swift"; sourceTree = "<group>"; };
+		2E4A07B01C42F599007F415F /* ListNotesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListNotesTableViewCell.swift; sourceTree = "<group>"; };
+		95FBA481227CCDF800894BE8 /* kT8ngMbnc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kT8ngMbnc.png; sourceTree = "<group>"; };
+		95FBA483227CCE1500894BE8 /* 69-696767_free-folder-pink-pink-folder-cartoon-clipart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "69-696767_free-folder-pink-pink-folder-cartoon-clipart.png"; sourceTree = "<group>"; };
+		95FBA485227CCE1D00894BE8 /* transparent-microphone-cartoon-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "transparent-microphone-cartoon-3.png"; sourceTree = "<group>"; };
+		95FBA487227CD00900894BE8 /* 12588374231021674709snifty_Spiral_notebook.svg.hi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 12588374231021674709snifty_Spiral_notebook.svg.hi.png; sourceTree = "<group>"; };
+		95FBA489227CD18800894BE8 /* ListActualNotesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListActualNotesController.swift; sourceTree = "<group>"; };
+		95FBA48B227CD32A00894BE8 /* ListPhotosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPhotosController.swift; sourceTree = "<group>"; };
+		95FBA48D227CD40700894BE8 /* ListDicatationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDicatationsController.swift; sourceTree = "<group>"; };
+		95FBA48F22874D2B00894BE8 /* ListDictationsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDictationsTableViewCell.swift; sourceTree = "<group>"; };
+		95FBA4912287506000894BE8 /* DisplayDictationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayDictationViewController.swift; sourceTree = "<group>"; };
+		95FBA493228757F300894BE8 /* dictations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dictations.swift; sourceTree = "<group>"; };
+		95FBA4952287B55B00894BE8 /* ListActualNotesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListActualNotesTableViewCell.swift; sourceTree = "<group>"; };
+		95FBA4972287BD5100894BE8 /* DisplayActualNoteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayActualNoteController.swift; sourceTree = "<group>"; };
+		95FBA4992287C20B00894BE8 /* notes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notes.swift; sourceTree = "<group>"; };
+		95FBA49B2287CDA000894BE8 /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
+		95FBA49E228892AD00894BE8 /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
+		95FBA4A0228892E400894BE8 /* Projects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Projects.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2E4A078D1C42F3B0007F415F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E4A07871C42F3B0007F415F = {
+			isa = PBXGroup;
+			children = (
+				2E4A07921C42F3B0007F415F /* MakeSchoolNotes */,
+				2E4A07911C42F3B0007F415F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2E4A07911C42F3B0007F415F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2E4A07901C42F3B0007F415F /* MakeSchoolNotes.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2E4A07921C42F3B0007F415F /* MakeSchoolNotes */ = {
+			isa = PBXGroup;
+			children = (
+				95FBA480227CCD0F00894BE8 /* Images */,
+				2E4A07AC1C42F4EB007F415F /* Helpers */,
+				2E4A07AD1C42F4EB007F415F /* Extensions */,
+				2E4A07A51C42F3F2007F415F /* Controllers */,
+				2E4A07A61C42F3F2007F415F /* Views */,
+				2E4A07A71C42F3F2007F415F /* Models */,
+				2E4A07931C42F3B0007F415F /* AppDelegate.swift */,
+				2E4A07971C42F3B0007F415F /* Main.storyboard */,
+				95FBA49D228892AD00894BE8 /* CoreData.xcdatamodeld */,
+				2E4A079A1C42F3B0007F415F /* Assets.xcassets */,
+				2E4A079C1C42F3B0007F415F /* LaunchScreen.storyboard */,
+				2E4A079F1C42F3B0007F415F /* Info.plist */,
+			);
+			path = MakeSchoolNotes;
+			sourceTree = "<group>";
+		};
+		2E4A07A51C42F3F2007F415F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2E4A07A81C42F40B007F415F /* ListNotesTableViewController.swift */,
+				2E4A07AA1C42F497007F415F /* DisplayNoteViewController.swift */,
+				95FBA489227CD18800894BE8 /* ListActualNotesController.swift */,
+				95FBA48B227CD32A00894BE8 /* ListPhotosController.swift */,
+				95FBA48D227CD40700894BE8 /* ListDicatationsController.swift */,
+				95FBA4912287506000894BE8 /* DisplayDictationViewController.swift */,
+				95FBA4972287BD5100894BE8 /* DisplayActualNoteController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2E4A07A61C42F3F2007F415F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2E4A07B01C42F599007F415F /* ListNotesTableViewCell.swift */,
+				95FBA48F22874D2B00894BE8 /* ListDictationsTableViewCell.swift */,
+				95FBA4952287B55B00894BE8 /* ListActualNotesTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2E4A07A71C42F3F2007F415F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				95FBA493228757F300894BE8 /* dictations.swift */,
+				95FBA4992287C20B00894BE8 /* notes.swift */,
+				95FBA4A0228892E400894BE8 /* Projects.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2E4A07AC1C42F4EB007F415F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				95FBA49B2287CDA000894BE8 /* CoreDataHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		2E4A07AD1C42F4EB007F415F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2E4A07AE1C42F539007F415F /* Date+convertToString.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		95FBA480227CCD0F00894BE8 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				95FBA487227CD00900894BE8 /* 12588374231021674709snifty_Spiral_notebook.svg.hi.png */,
+				95FBA485227CCE1D00894BE8 /* transparent-microphone-cartoon-3.png */,
+				95FBA483227CCE1500894BE8 /* 69-696767_free-folder-pink-pink-folder-cartoon-clipart.png */,
+				95FBA481227CCDF800894BE8 /* kT8ngMbnc.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2E4A078F1C42F3B0007F415F /* MakeSchoolNotes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E4A07A21C42F3B0007F415F /* Build configuration list for PBXNativeTarget "MakeSchoolNotes" */;
+			buildPhases = (
+				2E4A078C1C42F3B0007F415F /* Sources */,
+				2E4A078D1C42F3B0007F415F /* Frameworks */,
+				2E4A078E1C42F3B0007F415F /* Resources */,
+				2E4A07BB1C42F8B5007F415F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MakeSchoolNotes;
+			productName = MakeSchoolNotes;
+			productReference = 2E4A07901C42F3B0007F415F /* MakeSchoolNotes.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2E4A07881C42F3B0007F415F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = MakeSchool;
+				TargetAttributes = {
+					2E4A078F1C42F3B0007F415F = {
+						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 1020;
+					};
+				};
+			};
+			buildConfigurationList = 2E4A078B1C42F3B0007F415F /* Build configuration list for PBXProject "MakeSchoolNotes" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2E4A07871C42F3B0007F415F;
+			productRefGroup = 2E4A07911C42F3B0007F415F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2E4A078F1C42F3B0007F415F /* MakeSchoolNotes */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2E4A078E1C42F3B0007F415F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95FBA488227CD00900894BE8 /* 12588374231021674709snifty_Spiral_notebook.svg.hi.png in Resources */,
+				95FBA482227CCDF800894BE8 /* kT8ngMbnc.png in Resources */,
+				95FBA484227CCE1500894BE8 /* 69-696767_free-folder-pink-pink-folder-cartoon-clipart.png in Resources */,
+				2E4A079E1C42F3B0007F415F /* LaunchScreen.storyboard in Resources */,
+				2E4A079B1C42F3B0007F415F /* Assets.xcassets in Resources */,
+				2E4A07991C42F3B0007F415F /* Main.storyboard in Resources */,
+				95FBA486227CCE1D00894BE8 /* transparent-microphone-cartoon-3.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2E4A078C1C42F3B0007F415F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95FBA49F228892AD00894BE8 /* CoreData.xcdatamodeld in Sources */,
+				2E4A07B11C42F599007F415F /* ListNotesTableViewCell.swift in Sources */,
+				95FBA4982287BD5100894BE8 /* DisplayActualNoteController.swift in Sources */,
+				95FBA49C2287CDA000894BE8 /* CoreDataHelper.swift in Sources */,
+				2E4A07AF1C42F539007F415F /* Date+convertToString.swift in Sources */,
+				95FBA48E227CD40700894BE8 /* ListDicatationsController.swift in Sources */,
+				2E4A07AB1C42F497007F415F /* DisplayNoteViewController.swift in Sources */,
+				95FBA4962287B55B00894BE8 /* ListActualNotesTableViewCell.swift in Sources */,
+				2E4A07941C42F3B0007F415F /* AppDelegate.swift in Sources */,
+				95FBA48A227CD18800894BE8 /* ListActualNotesController.swift in Sources */,
+				95FBA4922287506000894BE8 /* DisplayDictationViewController.swift in Sources */,
+				2E4A07A91C42F40B007F415F /* ListNotesTableViewController.swift in Sources */,
+				95FBA49022874D2B00894BE8 /* ListDictationsTableViewCell.swift in Sources */,
+				95FBA48C227CD32A00894BE8 /* ListPhotosController.swift in Sources */,
+				95FBA494228757F300894BE8 /* dictations.swift in Sources */,
+				95FBA49A2287C20B00894BE8 /* notes.swift in Sources */,
+				95FBA4A1228892E400894BE8 /* Projects.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2E4A07971C42F3B0007F415F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E4A07981C42F3B0007F415F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2E4A079C1C42F3B0007F415F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E4A079D1C42F3B0007F415F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2E4A07A01C42F3B0007F415F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2E4A07A11C42F3B0007F415F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2E4A07A31C42F3B0007F415F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = MakeSchoolNotes/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.makeschool.MakeSchoolNotes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2E4A07A41C42F3B0007F415F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = MakeSchoolNotes/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.makeschool.MakeSchoolNotes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2E4A078B1C42F3B0007F415F /* Build configuration list for PBXProject "MakeSchoolNotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E4A07A01C42F3B0007F415F /* Debug */,
+				2E4A07A11C42F3B0007F415F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E4A07A21C42F3B0007F415F /* Build configuration list for PBXNativeTarget "MakeSchoolNotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E4A07A31C42F3B0007F415F /* Debug */,
+				2E4A07A41C42F3B0007F415F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		95FBA49D228892AD00894BE8 /* CoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				95FBA49E228892AD00894BE8 /* CoreData.xcdatamodel */,
+			);
+			currentVersion = 95FBA49E228892AD00894BE8 /* CoreData.xcdatamodel */;
+			path = CoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2E4A07881C42F3B0007F415F /* Project object */;
+}
