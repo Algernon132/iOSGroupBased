@@ -162,6 +162,8 @@ class ListPhotosViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        cloudinary.cachePolicy = CLDImageCachePolicy.disk
+        
         self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
         
         self.imagePicker = ImagePicker(presentationController: self, delegate: self as! ImagePickerDelegate)

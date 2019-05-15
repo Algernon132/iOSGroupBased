@@ -118,7 +118,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="i4c-Tt-QYA" kind="show" id="R4x-hK-1aO"/>
+                                    <segue destination="i4c-Tt-QYA" kind="show" id="Juw-dg-LAM"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3g7-o1-c4a">
@@ -242,11 +242,12 @@
                             </connections>
                         </barButtonItem>
                     </toolbarItems>
+                    <navigationItem key="navigationItem" id="fHc-v1-VLX"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hBP-w9-JEc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3132" y="108"/>
+            <point key="canvasLocation" x="3143" y="119"/>
         </scene>
         <!--Dictations-->
         <scene sceneID="9bt-SN-DeL">
