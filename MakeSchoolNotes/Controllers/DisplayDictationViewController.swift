@@ -22,6 +22,8 @@ class DisplayDictationViewController: UIViewController, SFSpeechRecognizerDelega
     @IBOutlet weak var stopDictationButton: UIButton!
     
     
+    
+    
     var dictation: Dictations?
     
     
@@ -32,17 +34,7 @@ class DisplayDictationViewController: UIViewController, SFSpeechRecognizerDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        startDictationButton.layer.cornerRadius = startDictationButton.frame.height / 2
-        startDictationButton.layer.shadowColor = UIColor.gray.cgColor
-        startDictationButton.layer.shadowRadius = 5
-        startDictationButton.layer.shadowOpacity = 0.5
-        startDictationButton.layer.shadowOffset = CGSize(width: 0, height: 0)
         
-        stopDictationButton.layer.cornerRadius = stopDictationButton.frame.height / 2
-        stopDictationButton.layer.shadowColor = UIColor.gray.cgColor
-        stopDictationButton.layer.shadowRadius = 5
-        stopDictationButton.layer.shadowOpacity = 0.5
-        stopDictationButton.layer.shadowOffset = CGSize(width: 0, height: 0)
         
         
         

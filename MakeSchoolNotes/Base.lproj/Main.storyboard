@@ -98,11 +98,11 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="Notes" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UNK-0z-WDy">
                                 <rect key="frame" x="24" y="444" width="138" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.9137254901960784" green="0.38039215686274508" blue="0.60392156862745094" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="17"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Notes">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" red="0.91372549020000005" green="0.3803921569" blue="0.60392156860000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
                                     <segue destination="w1Q-nU-CJQ" kind="show" id="qDs-8d-ddi"/>
@@ -111,11 +111,11 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZFd-sH-YiZ">
                                 <rect key="frame" x="220" y="444" width="150" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.9137254901960784" green="0.38039215686274508" blue="0.60392156862745094" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="17"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Photos">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" red="0.91372549020000005" green="0.3803921569" blue="0.60392156860000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
                                     <segue destination="dYG-TL-qOV" kind="show" identifier="photos" id="ie4-4r-Wpd"/>
@@ -124,11 +124,11 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3g7-o1-c4a">
                                 <rect key="frame" x="135" y="750" width="131" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.9137254901960784" green="0.38039215686274508" blue="0.60392156862745094" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="17"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Dictations">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" red="0.91372549020000005" green="0.3803921569" blue="0.60392156860000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
                                     <segue destination="7Yx-uV-qZZ" kind="show" identifier="dictations" id="C3Z-L3-1Wy"/>
@@ -143,11 +143,18 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter a Title:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nBx-Z3-VCd">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nBx-Z3-VCd">
                                 <rect key="frame" x="16" y="64" width="201" height="121"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="35"/>
-                                <color key="textColor" red="0.58823529409999997" green="0.14901960780000001" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Enter a Title:">
+                                        <attributes>
+                                            <color key="NSColor" red="0.91372549020000005" green="0.3803921569" blue="0.60392156860000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="35" name="AppleSDGothicNeo-Bold"/>
+                                            <integer key="NSUnderline" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kT8ngMbnc.png" translatesAutoresizingMaskIntoConstraints="NO" id="CCy-5D-npe">
@@ -274,9 +281,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OZu-El-VbI">
-                                <rect key="frame" x="217" y="190" width="74" height="30"/>
-                                <state key="normal" title="Stop"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OZu-El-VbI">
+                                <rect key="frame" x="217" y="172" width="74" height="48"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Stop">
+                                            <attributes>
+                                                <color key="NSColor" red="0.91372549020000005" green="0.3803921569" blue="0.60392156860000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <font key="NSFont" size="30" name="AppleSDGothicNeo-Bold"/>
+                                                <integer key="NSUnderline" value="1"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
                                 <connections>
                                     <action selector="stopButtonTapped:" destination="7sh-Wo-9nt" eventType="touchUpInside" id="eSS-Rn-tbQ"/>
                                 </connections>
@@ -297,19 +314,36 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dictations" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XgY-ns-x6b">
-                                <rect key="frame" x="120" y="118" width="135" height="28"/>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="30"/>
-                                <color key="textColor" red="0.58823529409999997" green="0.14901960780000001" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eXr-ke-bQ7">
-                                <rect key="frame" x="67" y="190" width="74" height="30"/>
-                                <state key="normal" title="Start"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eXr-ke-bQ7">
+                                <rect key="frame" x="67" y="172" width="74" height="48"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Start">
+                                            <attributes>
+                                                <color key="NSColor" red="0.91372549020000005" green="0.3803921569" blue="0.60392156860000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <font key="NSFont" size="30" name="AppleSDGothicNeo-Bold"/>
+                                                <font key="NSOriginalFont" size="30" name="AppleSDGothicNeo-Bold"/>
+                                                <integer key="NSUnderline" value="1"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
                                 <connections>
                                     <action selector="startButtonTapped:" destination="7sh-Wo-9nt" eventType="touchUpInside" id="fhW-Ps-9YU"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XgY-ns-x6b">
+                                <rect key="frame" x="120" y="94" width="181" height="44"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Dictations">
+                                        <attributes>
+                                            <color key="NSColor" red="0.91372549020000005" green="0.3803921569" blue="0.60392156860000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="40" name="AppleSDGothicNeo-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -324,12 +358,12 @@
                             <constraint firstItem="XQX-RZ-yab" firstAttribute="leading" secondItem="eXr-ke-bQ7" secondAttribute="leading" id="Vyc-ic-4w5"/>
                             <constraint firstItem="jIC-ca-Fv0" firstAttribute="trailing" secondItem="OZu-El-VbI" secondAttribute="trailing" constant="84" id="YdD-Qo-Cau"/>
                             <constraint firstItem="jIC-ca-Fv0" firstAttribute="bottom" secondItem="OZu-El-VbI" secondAttribute="bottom" constant="447" id="csc-Ax-GS1"/>
-                            <constraint firstItem="eXr-ke-bQ7" firstAttribute="top" secondItem="XgY-ns-x6b" secondAttribute="bottom" constant="44" id="fde-nt-mDz"/>
+                            <constraint firstItem="eXr-ke-bQ7" firstAttribute="top" secondItem="XgY-ns-x6b" secondAttribute="bottom" constant="34" id="fde-nt-mDz"/>
                             <constraint firstItem="XQX-RZ-yab" firstAttribute="top" secondItem="eXr-ke-bQ7" secondAttribute="bottom" constant="27" id="n96-lw-Wgt"/>
-                            <constraint firstItem="OZu-El-VbI" firstAttribute="top" secondItem="XgY-ns-x6b" secondAttribute="bottom" constant="44" id="nh0-hB-Aqr"/>
+                            <constraint firstItem="OZu-El-VbI" firstAttribute="top" secondItem="XgY-ns-x6b" secondAttribute="bottom" constant="34" id="nh0-hB-Aqr"/>
                             <constraint firstItem="jIC-ca-Fv0" firstAttribute="trailing" secondItem="XQX-RZ-yab" secondAttribute="trailing" constant="87" id="prP-nq-yZX"/>
                             <constraint firstItem="XgY-ns-x6b" firstAttribute="leading" secondItem="jIC-ca-Fv0" secondAttribute="leading" constant="120" id="sMh-Oa-aIV"/>
-                            <constraint firstItem="XgY-ns-x6b" firstAttribute="top" secondItem="jIC-ca-Fv0" secondAttribute="top" constant="54" id="uae-Ex-DO5"/>
+                            <constraint firstItem="XgY-ns-x6b" firstAttribute="top" secondItem="jIC-ca-Fv0" secondAttribute="top" constant="30" id="uae-Ex-DO5"/>
                             <constraint firstItem="jIC-ca-Fv0" firstAttribute="bottom" secondItem="eXr-ke-bQ7" secondAttribute="bottom" constant="447" id="wVM-vj-a8F"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jIC-ca-Fv0"/>
@@ -351,8 +385,8 @@
                     <connections>
                         <outlet property="convertedTextField" destination="L14-Sx-R8D" id="YaR-Pl-iG9"/>
                         <outlet property="dictationLabel" destination="XQX-RZ-yab" id="A1P-nH-roA"/>
-                        <outlet property="startDictationButton" destination="eXr-ke-bQ7" id="lja-Tc-vDd"/>
-                        <outlet property="stopDictationButton" destination="OZu-El-VbI" id="y29-9R-FFI"/>
+                        <outlet property="startDictationButton" destination="eXr-ke-bQ7" id="y2k-MB-U1w"/>
+                        <outlet property="stopDictationButton" destination="OZu-El-VbI" id="103-dy-Ga8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Loa-Uw-byz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -457,14 +491,33 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bnV-Og-tMT">
+                                <rect key="frame" x="28" y="70" width="185" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="Myv-7c-dkK"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Enter a Title:">
+                                        <attributes>
+                                            <color key="NSColor" red="0.91372549020000005" green="0.3803921569" blue="0.60392156860000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="30" name="AppleSDGothicNeo-Regular"/>
+                                            <integer key="NSUnderline" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="vVu-0B-ezn" firstAttribute="top" secondItem="cxT-XN-SGA" secondAttribute="bottom" constant="19" id="0J2-v3-QeK"/>
                             <constraint firstItem="ZbS-2h-TZX" firstAttribute="trailing" secondItem="cxT-XN-SGA" secondAttribute="trailing" constant="29" id="2uy-Xp-zzi"/>
+                            <constraint firstItem="bnV-Og-tMT" firstAttribute="top" secondItem="ZbS-2h-TZX" secondAttribute="top" constant="6" id="3J7-Ln-hBs"/>
+                            <constraint firstItem="bnV-Og-tMT" firstAttribute="leading" secondItem="cxT-XN-SGA" secondAttribute="leading" id="8aA-gj-tg9"/>
                             <constraint firstItem="ZbS-2h-TZX" firstAttribute="trailing" secondItem="vVu-0B-ezn" secondAttribute="trailing" constant="29" id="Aea-SS-QT6"/>
                             <constraint firstItem="cxT-XN-SGA" firstAttribute="top" secondItem="ZbS-2h-TZX" secondAttribute="top" constant="49" id="DnN-3q-T6k"/>
                             <constraint firstItem="ZbS-2h-TZX" firstAttribute="bottom" secondItem="vVu-0B-ezn" secondAttribute="bottom" constant="20" id="I8Z-Fe-5c0"/>
+                            <constraint firstItem="ZbS-2h-TZX" firstAttribute="trailing" secondItem="bnV-Og-tMT" secondAttribute="trailing" constant="162" id="cjS-r5-97S"/>
                             <constraint firstItem="cxT-XN-SGA" firstAttribute="leading" secondItem="ZbS-2h-TZX" secondAttribute="leading" constant="28" id="iqB-1g-Of7"/>
                             <constraint firstItem="vVu-0B-ezn" firstAttribute="leading" secondItem="ZbS-2h-TZX" secondAttribute="leading" constant="28" id="kEn-9Q-MKX"/>
                             <constraint firstItem="vVu-0B-ezn" firstAttribute="top" secondItem="cxT-XN-SGA" secondAttribute="bottom" constant="19" id="nK9-1U-GAg"/>
