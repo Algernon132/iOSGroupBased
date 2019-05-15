@@ -3,21 +3,22 @@
 //  MakeSchoolNotes
 //
 //  Created by Thomas Jurczyk on 5/14/19.
-//  Copyright © 2019 MakeSchool. All rights reserved.
+//  Copyright © 2019 Thomas Jurczyk. All rights reserved.
 //
 
 import UIKit
 import Cloudinary
 
 let cloudinary = CLDCloudinary(configuration: CLDConfiguration(cloudName: "dnceabf52", apiSecret: "oe9TSfe2e-_tKV7wE7tMRkxCNkM", secure: true))
+//NORMALLY THERE WOULD BE A DATABASE CALL HERE, BUT AT THIS POINT WE HAVE NOT YET IMPLEMENTED THIS FUNCTIONALITY, SO WHAT FOLLOWS IS ONLY AN ARRAY OF PRE-CREATED IMAGE URLs TO DEMONSTRATE THE CLOUD IMAGE FUNCTION
+    var sampleImgArray=["https://res.cloudinary.com/dnceabf52/image/upload/v1557877196/iOSProject/lx0aybhbublxrhsqdxw3.jpg","https://res.cloudinary.com/dnceabf52/image/upload/v1557877442/iOSProject/vvmagvuhcquq0p8hro8i.jpg","https://res.cloudinary.com/dnceabf52/image/upload/v1557705556/iOSProject/lnda969ht9yotukohlbc.jpg","https://res.cloudinary.com/dnceabf52/image/upload/v1557712070/iOSProject/Screen_Shot_2019-05-09_at_1.52.40_PM_q6padk.png"]
+var newSampleImg:String!
 
 public protocol ImagePickerDelegate: class {
     func didSelect(image: UIImage?)
 }
 
 open class ImagePicker: NSObject {
-    
-    //let cloudinary = CLDCloudinary(configuration: CLDConfiguration(cloudName: "dnceabf52", apiSecret: "oe9TSfe2e-_tKV7wE7tMRkxCNkM", secure: true))
     
     private let pickerController: UIImagePickerController
     private weak var presentationController: UIViewController?
@@ -79,7 +80,10 @@ open class ImagePicker: NSObject {
         let request = cloudinary.createUploader().upload(data: dataImage, uploadPreset: "normalupload")
         request.response { (result, error) in
             //THE BELOW URL IS A DIRECT, UNIQUE LINK TO THE UPLOADED MEDIA FILE
-            print(result?.url)
+            //print(result?.url)
+            //sampleImgArray.append((result?.url)!)
+            newSampleImg=result?.url
+            //print(newSampleImg)
         }
     }
 }
@@ -91,8 +95,8 @@ extension ImagePicker: UIImagePickerControllerDelegate {
     }
     
     public func imagePickerController(_ picker: UIImagePickerController,
-                                      didFinishPickingMediaWithInfo ixznfo: [UIImagePickerController.InfoKey: Any]) {
-        guard let image = ixznfo[.originalImage] as? UIImage else {
+                                      didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
+        guard let image = info[.originalImage] as? UIImage else {
             return self.pickerController(picker, didSelect: nil)
         }
         self.pickerController(picker, didSelect: image)
@@ -107,11 +111,13 @@ private let reuseIdentifier = "Cell"
 
 class ListPhotosViewController: UICollectionViewController {
     
-    //let cloudinary = CLDCloudinary(configuration: CLDConfiguration(cloudName: "dnceabf52", apiSecret: "oe9TSfe2e-_tKV7wE7tMRkxCNkM", secure: true))
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.isToolbarHidden = false
+    }
     
-    var imagePicker: ImagePicker!
+    var tempCell:UICollectionViewCell!
     
-    @IBOutlet var currentView: UIView!
+    var imagePicker:ImagePicker!
 
     /*
     // MARK: - Navigation
@@ -125,9 +131,6 @@ class ListPhotosViewController: UICollectionViewController {
 
     // MARK: UICollectionViewDataSource
     
-    
-    //NORMALLY THERE WOULD BE A DATABASE CALL HERE, BUT AT THIS POINT WE HAVE NOT YET IMPLEMENTED THIS FUNCTIONALITY, SO WHAT FOLLOWS IS ONLY AN ARRAY OF PRE-CREATED IMAGE URLs TO DEMONSTRATE THE CLOUD IMAGE FUNCTION
-    let sampleImgArray=["https://res.cloudinary.com/dnceabf52/image/upload/v1557877196/iOSProject/lx0aybhbublxrhsqdxw3.jpg","https://res.cloudinary.com/dnceabf52/image/upload/v1557877442/iOSProject/vvmagvuhcquq0p8hro8i.jpg","https://res.cloudinary.com/dnceabf52/image/upload/v1557705556/iOSProject/lnda969ht9yotukohlbc.jpg","https://res.cloudinary.com/dnceabf52/image/upload/v1557712070/iOSProject/Screen_Shot_2019-05-09_at_1.52.40_PM_q6padk.png"]
     var CellUIImageArray:[UIImageView]=[]
     var isComplete:Bool=false
     
@@ -139,15 +142,15 @@ class ListPhotosViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return sampleImgArray.count
+        return sampleImgArray.count+1
     }
     @IBAction func addPhoto(_ sender: Any) {
-        self.imagePicker.present(from: currentView)
+        self.imagePicker.present(from: self.view)
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "photoCell", for: indexPath)
-        
+
         if let cell=cell as? PhotoCollectionViewCell
         {
             CellUIImageArray.append(cell.photoContents)
@@ -155,6 +158,10 @@ class ListPhotosViewController: UICollectionViewController {
         if(indexPath.item==sampleImgArray.count-1)
         {
             downloadImage(URLsToDownload: sampleImgArray, Images: CellUIImageArray)
+        }
+        if(indexPath.item==sampleImgArray.count)
+        {
+            tempCell=cell
         }
         return cell
     }
@@ -166,7 +173,7 @@ class ListPhotosViewController: UICollectionViewController {
         
         self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
         
-        self.imagePicker = ImagePicker(presentationController: self, delegate: self as! ImagePickerDelegate)
+        self.imagePicker = ImagePicker(presentationController: self, delegate: self as ImagePickerDelegate)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -189,6 +196,18 @@ class ListPhotosViewController: UICollectionViewController {
                 // error is an instance of NSError
             }
         }
+    }
+    func downloadOne(imgHandle:UIImageView)
+    {
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(4), execute: {
+            print("New Sample Img:", newSampleImg)
+            cloudinary.createDownloader().fetchImage(newSampleImg) { (image, error) in
+                imgHandle.image=image
+                print(error)
+                // image is an instance UIImage
+                // error is an instance of NSError
+            }
+        })
     }
     
 }
@@ -226,6 +245,8 @@ class ListPhotosViewController: UICollectionViewController {
 extension ListPhotosViewController: ImagePickerDelegate {
     
     func didSelect(image: UIImage?) {
-        //self.imageView.image = image
+        downloadOne(imgHandle:self.CellUIImageArray[4])
+        self.CellUIImageArray[4].image=image
+        //cloudinary.createDownloader().fetchImage(sampleImgArray[sampleImgArray.count-1]) { (image, error) in
     }
 }
