@@ -15,12 +15,13 @@
 		2E4A07AB1C42F497007F415F /* DisplayNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4A07AA1C42F497007F415F /* DisplayNoteViewController.swift */; };
 		2E4A07AF1C42F539007F415F /* Date+convertToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4A07AE1C42F539007F415F /* Date+convertToString.swift */; };
 		2E4A07B11C42F599007F415F /* ListNotesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4A07B01C42F599007F415F /* ListNotesTableViewCell.swift */; };
+		92ED0AF7228BBD4200F56C3C /* ListPhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92ED0AF6228BBD4200F56C3C /* ListPhotosViewController.swift */; };
+		92ED0AF9228BDF7700F56C3C /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92ED0AF8228BDF7700F56C3C /* PhotoCollectionViewCell.swift */; };
 		95FBA482227CCDF800894BE8 /* kT8ngMbnc.png in Resources */ = {isa = PBXBuildFile; fileRef = 95FBA481227CCDF800894BE8 /* kT8ngMbnc.png */; };
 		95FBA484227CCE1500894BE8 /* 69-696767_free-folder-pink-pink-folder-cartoon-clipart.png in Resources */ = {isa = PBXBuildFile; fileRef = 95FBA483227CCE1500894BE8 /* 69-696767_free-folder-pink-pink-folder-cartoon-clipart.png */; };
 		95FBA486227CCE1D00894BE8 /* transparent-microphone-cartoon-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 95FBA485227CCE1D00894BE8 /* transparent-microphone-cartoon-3.png */; };
 		95FBA488227CD00900894BE8 /* 12588374231021674709snifty_Spiral_notebook.svg.hi.png in Resources */ = {isa = PBXBuildFile; fileRef = 95FBA487227CD00900894BE8 /* 12588374231021674709snifty_Spiral_notebook.svg.hi.png */; };
 		95FBA48A227CD18800894BE8 /* ListActualNotesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FBA489227CD18800894BE8 /* ListActualNotesController.swift */; };
-		95FBA48C227CD32A00894BE8 /* ListPhotosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FBA48B227CD32A00894BE8 /* ListPhotosController.swift */; };
 		95FBA48E227CD40700894BE8 /* ListDicatationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FBA48D227CD40700894BE8 /* ListDicatationsController.swift */; };
 		95FBA49022874D2B00894BE8 /* ListDictationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FBA48F22874D2B00894BE8 /* ListDictationsTableViewCell.swift */; };
 		95FBA4922287506000894BE8 /* DisplayDictationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FBA4912287506000894BE8 /* DisplayDictationViewController.swift */; };
@@ -31,6 +32,7 @@
 		95FBA49C2287CDA000894BE8 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FBA49B2287CDA000894BE8 /* CoreDataHelper.swift */; };
 		95FBA49F228892AD00894BE8 /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 95FBA49D228892AD00894BE8 /* CoreData.xcdatamodeld */; };
 		95FBA4A1228892E400894BE8 /* Projects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FBA4A0228892E400894BE8 /* Projects.swift */; };
+		F247895E21D533C2C6BF0C0C /* Pods_MakeSchoolNotes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9BED8EDEBC29E8BA13DD564 /* Pods_MakeSchoolNotes.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -57,12 +59,13 @@
 		2E4A07AA1C42F497007F415F /* DisplayNoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayNoteViewController.swift; sourceTree = "<group>"; };
 		2E4A07AE1C42F539007F415F /* Date+convertToString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+convertToString.swift"; sourceTree = "<group>"; };
 		2E4A07B01C42F599007F415F /* ListNotesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListNotesTableViewCell.swift; sourceTree = "<group>"; };
+		92ED0AF6228BBD4200F56C3C /* ListPhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPhotosViewController.swift; sourceTree = "<group>"; };
+		92ED0AF8228BDF7700F56C3C /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		95FBA481227CCDF800894BE8 /* kT8ngMbnc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kT8ngMbnc.png; sourceTree = "<group>"; };
 		95FBA483227CCE1500894BE8 /* 69-696767_free-folder-pink-pink-folder-cartoon-clipart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "69-696767_free-folder-pink-pink-folder-cartoon-clipart.png"; sourceTree = "<group>"; };
 		95FBA485227CCE1D00894BE8 /* transparent-microphone-cartoon-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "transparent-microphone-cartoon-3.png"; sourceTree = "<group>"; };
 		95FBA487227CD00900894BE8 /* 12588374231021674709snifty_Spiral_notebook.svg.hi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 12588374231021674709snifty_Spiral_notebook.svg.hi.png; sourceTree = "<group>"; };
 		95FBA489227CD18800894BE8 /* ListActualNotesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListActualNotesController.swift; sourceTree = "<group>"; };
-		95FBA48B227CD32A00894BE8 /* ListPhotosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPhotosController.swift; sourceTree = "<group>"; };
 		95FBA48D227CD40700894BE8 /* ListDicatationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDicatationsController.swift; sourceTree = "<group>"; };
 		95FBA48F22874D2B00894BE8 /* ListDictationsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDictationsTableViewCell.swift; sourceTree = "<group>"; };
 		95FBA4912287506000894BE8 /* DisplayDictationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayDictationViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +76,9 @@
 		95FBA49B2287CDA000894BE8 /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 		95FBA49E228892AD00894BE8 /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
 		95FBA4A0228892E400894BE8 /* Projects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Projects.swift; sourceTree = "<group>"; };
+		D90CB06150D8645203A68CD1 /* Pods-MakeSchoolNotes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakeSchoolNotes.debug.xcconfig"; path = "Target Support Files/Pods-MakeSchoolNotes/Pods-MakeSchoolNotes.debug.xcconfig"; sourceTree = "<group>"; };
+		DB55CD0CD424CD455EA81FB1 /* Pods-MakeSchoolNotes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakeSchoolNotes.release.xcconfig"; path = "Target Support Files/Pods-MakeSchoolNotes/Pods-MakeSchoolNotes.release.xcconfig"; sourceTree = "<group>"; };
+		F9BED8EDEBC29E8BA13DD564 /* Pods_MakeSchoolNotes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MakeSchoolNotes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F247895E21D533C2C6BF0C0C /* Pods_MakeSchoolNotes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +98,8 @@
 			children = (
 				2E4A07921C42F3B0007F415F /* MakeSchoolNotes */,
 				2E4A07911C42F3B0007F415F /* Products */,
+				9D27A4F3F3A45CE2AD25AED6 /* Pods */,
+				6AE4907C360E2AE6EE31BA31 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,10 +136,10 @@
 				2E4A07A81C42F40B007F415F /* ListNotesTableViewController.swift */,
 				2E4A07AA1C42F497007F415F /* DisplayNoteViewController.swift */,
 				95FBA489227CD18800894BE8 /* ListActualNotesController.swift */,
-				95FBA48B227CD32A00894BE8 /* ListPhotosController.swift */,
 				95FBA48D227CD40700894BE8 /* ListDicatationsController.swift */,
 				95FBA4912287506000894BE8 /* DisplayDictationViewController.swift */,
 				95FBA4972287BD5100894BE8 /* DisplayActualNoteController.swift */,
+				92ED0AF6228BBD4200F56C3C /* ListPhotosViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -167,8 +176,17 @@
 			isa = PBXGroup;
 			children = (
 				2E4A07AE1C42F539007F415F /* Date+convertToString.swift */,
+				92ED0AF8228BDF7700F56C3C /* PhotoCollectionViewCell.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6AE4907C360E2AE6EE31BA31 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F9BED8EDEBC29E8BA13DD564 /* Pods_MakeSchoolNotes.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		95FBA480227CCD0F00894BE8 /* Images */ = {
@@ -182,6 +200,15 @@
 			path = Images;
 			sourceTree = "<group>";
 		};
+		9D27A4F3F3A45CE2AD25AED6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D90CB06150D8645203A68CD1 /* Pods-MakeSchoolNotes.debug.xcconfig */,
+				DB55CD0CD424CD455EA81FB1 /* Pods-MakeSchoolNotes.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -189,10 +216,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2E4A07A21C42F3B0007F415F /* Build configuration list for PBXNativeTarget "MakeSchoolNotes" */;
 			buildPhases = (
+				8938BFEF8ED080162C052A9F /* [CP] Check Pods Manifest.lock */,
 				2E4A078C1C42F3B0007F415F /* Sources */,
 				2E4A078D1C42F3B0007F415F /* Frameworks */,
 				2E4A078E1C42F3B0007F415F /* Resources */,
 				2E4A07BB1C42F8B5007F415F /* Embed Frameworks */,
+				D99FE24BFF862471EA4A96E5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -215,6 +244,7 @@
 				TargetAttributes = {
 					2E4A078F1C42F3B0007F415F = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 692TH724XD;
 						LastSwiftMigration = 1020;
 					};
 				};
@@ -254,6 +284,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8938BFEF8ED080162C052A9F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MakeSchoolNotes-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D99FE24BFF862471EA4A96E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MakeSchoolNotes/Pods-MakeSchoolNotes-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Cloudinary/Cloudinary.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cloudinary.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MakeSchoolNotes/Pods-MakeSchoolNotes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2E4A078C1C42F3B0007F415F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -262,7 +341,9 @@
 				95FBA49F228892AD00894BE8 /* CoreData.xcdatamodeld in Sources */,
 				2E4A07B11C42F599007F415F /* ListNotesTableViewCell.swift in Sources */,
 				95FBA4982287BD5100894BE8 /* DisplayActualNoteController.swift in Sources */,
+				92ED0AF7228BBD4200F56C3C /* ListPhotosViewController.swift in Sources */,
 				95FBA49C2287CDA000894BE8 /* CoreDataHelper.swift in Sources */,
+				92ED0AF9228BDF7700F56C3C /* PhotoCollectionViewCell.swift in Sources */,
 				2E4A07AF1C42F539007F415F /* Date+convertToString.swift in Sources */,
 				95FBA48E227CD40700894BE8 /* ListDicatationsController.swift in Sources */,
 				2E4A07AB1C42F497007F415F /* DisplayNoteViewController.swift in Sources */,
@@ -272,7 +353,6 @@
 				95FBA4922287506000894BE8 /* DisplayDictationViewController.swift in Sources */,
 				2E4A07A91C42F40B007F415F /* ListNotesTableViewController.swift in Sources */,
 				95FBA49022874D2B00894BE8 /* ListDictationsTableViewCell.swift in Sources */,
-				95FBA48C227CD32A00894BE8 /* ListPhotosController.swift in Sources */,
 				95FBA494228757F300894BE8 /* dictations.swift in Sources */,
 				95FBA49A2287C20B00894BE8 /* notes.swift in Sources */,
 				95FBA4A1228892E400894BE8 /* Projects.swift in Sources */,
@@ -409,8 +489,10 @@
 		};
 		2E4A07A31C42F3B0007F415F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D90CB06150D8645203A68CD1 /* Pods-MakeSchoolNotes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 692TH724XD;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -418,7 +500,7 @@
 				INFOPLIST_FILE = MakeSchoolNotes/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.makeschool.MakeSchoolNotes;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thomasjurczyk.MakeSchoolNotes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -426,8 +508,10 @@
 		};
 		2E4A07A41C42F3B0007F415F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB55CD0CD424CD455EA81FB1 /* Pods-MakeSchoolNotes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 692TH724XD;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -435,7 +519,7 @@
 				INFOPLIST_FILE = MakeSchoolNotes/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.makeschool.MakeSchoolNotes;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thomasjurczyk.MakeSchoolNotes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
