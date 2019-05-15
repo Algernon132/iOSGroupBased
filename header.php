@@ -1,7 +1,7 @@
 <?php
 //Report errors. Remove from production
 //FOR TESTING ONLY
-ini_set('display_errors',1); error_reporting(E_ALL);
+//ini_set('display_errors',1); error_reporting(E_ALL);
 
 require "dbConfig.php";
 

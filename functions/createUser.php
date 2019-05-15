@@ -4,6 +4,9 @@ function createUser($mysqli){
     $username = $_POST["username"];
     $hashedPassword = $_POST["hashedPassword"];
     $userStatus = 0;    //DEFAULT VALUE. CHANGE WHEN APPROPRIATE
+    if(!isset($_POST["fullName"])){
+        $_POST["fullName"] = null;
+    }
     $fullName = $_POST["fullName"];
     $returnObject = new returnJSON();
     if(isset($_POST["organizationID"])){
